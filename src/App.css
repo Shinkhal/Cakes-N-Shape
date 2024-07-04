@@ -6,6 +6,7 @@
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  
 }
 ::-webkit-scrollbar{
   display: none;
@@ -1141,81 +1142,119 @@ nav{
 }
 
 .container {
-    background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 768px;
-    min-height: 480px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 768px;
+  min-height: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Add this line to handle vertical stacking */
 }
 
+/* Styles for medium screens (tablets) */
+@media (max-width: 768px) {
+  .container {
+      padding: 0 15px;
+  }
+
+  .container button {
+      padding: 10px 30px;
+      font-size: 11px;
+  }
+
+  .container input {
+      padding: 8px 10px;
+      font-size: 12px;
+  }
+}
+
+/* Styles for small screens (phones) */
+@media (max-width: 480px) {
+  .container {
+      padding: 0 10px;
+  }
+
+  .container button {
+      padding: 8px 25px;
+      font-size: 10px;
+  }
+
+  .container input {
+      padding: 6px 8px;
+      font-size: 11px;
+  }
+}
+
+
 .container p {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
-    margin: 20px 0;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin: 20px 0;
 }
 
 .container a {
-    color: #333;
-    font-size: 13px;
-    text-decoration: none;
-    margin: 15px 0 10px;
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 15px 0 10px;
 }
 
 .container button {
-    background-color: #0d7b4a;
-    color: #fff;
-    font-size: 12px;
-    padding: 10px 45px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    cursor: pointer;
+  background-color: #0d7b4a;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .container button.hidden {
-    background-color: transparent;
-    border-color: #fff;
+  background-color: transparent;
+  border-color: #fff;
 }
 
 .container form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px; /* Adjust as needed */
-    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px; 
+  height: 100%;
 }
 
 .container input {
-    background-color: #eee;
-    border: none;
-    margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 13px;
-    border-radius: 8px;
-    width: 100%;
-    outline: none;
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
 }
 
 .form-container {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 50%;
-    transition: all 0.6s ease-in-out;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transition: all 0.6s ease-in-out;
 }
+
+
 
 .sign-in {
     left: 0;
@@ -1314,11 +1353,10 @@ nav{
     transform: translateX(200%);
 }
 
-/* Media queries for responsiveness */
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 10px; /* Adjust as needed */
+        padding: 0 10px; 
     }
 
     .welcome-header h1 {
@@ -1344,6 +1382,8 @@ nav{
     }
 }
 }
+
+
 
 
 
@@ -1411,4 +1451,37 @@ nav{
   font-weight: bold;
   color: #009688; /* Green color for price */
   font-family: 'Helvetica', sans-serif; /* Custom font for item price */
+}
+
+/* Highlight text on hover for specific elements */
+/* Magnified text */
+.magnified-text {
+  position: absolute;
+  pointer-events: none;
+  color: #f39c12;
+  transition: transform 0.1s ease-out;
+  transform-origin: center;
+  z-index: 9999;
+  font-size: 1.2em;
+}
+
+/* Highlight text on hover for specific elements */
+a:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+button:hover,
+.custom:hover {
+  color: #f39c12; /* Example highlight color */
+}
+
+/* Additional styles for buttons and other elements if needed */
+button,
+.custom {
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for p tag to magnify text */
+p:hover {
+  transform: scale(1.1); /* Magnify the text */
+  transition: transform 0.3s ease; /* Smooth transition effect */
 }
