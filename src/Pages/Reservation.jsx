@@ -26,7 +26,7 @@ const Reservation = () => {
     
     try {
       const { data } = await axios.post(
-        "https://ec2-13-200-59-120.ap-south-1.compute.amazonaws.com:4000/api/v1/reservation/send",
+        "http://testing-1165388212.ap-south-1.elb.amazonaws.com/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
