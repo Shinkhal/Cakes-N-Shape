@@ -17,7 +17,7 @@ const SignupForm = () => {
         e.preventDefault();
         try {
             const { data } = await axios.post(
-                "https://resturant-1.onrender.com/api/v1/signup/send",
+                "3.111.215.173:4000/api/v1/signup/send",
                 { first, last, email, password },
                 {
                     

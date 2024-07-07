@@ -16,7 +16,7 @@ const LoginForm = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "https://resturant-1.onrender.com/api/v1/login/send",
+                "3.111.215.173:4000/api/v1/login/send",
                 { email, password },
                 { withCredentials: true }
             );
