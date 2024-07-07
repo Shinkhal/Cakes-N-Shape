@@ -26,7 +26,7 @@ const Reservation = () => {
     
     try {
       const { data } = await axios.post(
-        "3.111.215.173:4000/api/v1/reservation/send",
+        "http://3.111.215.173:4000/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {

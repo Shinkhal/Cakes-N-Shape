@@ -16,7 +16,7 @@ const LoginForm = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "3.111.215.173:4000/api/v1/login/send",
+                "http://3.111.215.173:4000/api/v1/login/send",
                 { email, password },
                 { withCredentials: true }
             );
