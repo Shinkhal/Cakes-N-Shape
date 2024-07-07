@@ -17,7 +17,7 @@ const SignupForm = () => {
         e.preventDefault();
         try {
             const { data } = await axios.post(
-                "http://testing-1165388212.ap-south-1.elb.amazonaws.com/api/v1/signup/send",
+                "https://shinkhal-sinha.online/api/v1/signup/send",
                 { first, last, email, password },
                 {
                     

@@ -16,7 +16,7 @@ const LoginForm = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "http://testing-1165388212.ap-south-1.elb.amazonaws.com/api/v1/login/send",
+                "https://shinkhal-sinha.online/api/v1/login/send",
                 { email, password },
                 { withCredentials: true }
             );

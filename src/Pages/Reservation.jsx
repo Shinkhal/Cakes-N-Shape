@@ -12,7 +12,7 @@ const Reservation = () => {
   const [email, setEmail] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [phone, setPhone] = useState(0);
+  const [phone, setPhone] = useState("");
   const navigate = useNavigate();
 
   const isLoggedIn = localStorage.getItem("token") ? true : false;
@@ -23,11 +23,14 @@ const Reservation = () => {
       toast.error("Please login first.");
       return;
     }
-    
+
+    // Format date to dd-mm-yyyy format
+    const formattedDate = date.split('-').reverse().join('-');
+
     try {
       const { data } = await axios.post(
-        "http://testing-1165388212.ap-south-1.elb.amazonaws.com/api/v1/reservation/send",
-        { firstName, lastName, email, phone, date, time },
+        "https://shinkhal-sinha.online/api/v1/reservation/send",
+        { firstName, lastName, email, phone, date: formattedDate, time },
         {
           headers: {
             "Content-Type": "application/json",
@@ -50,7 +53,6 @@ const Reservation = () => {
 
   return (
     <>
-
       <section className="reservation" id="reservation">
         <div className="container">
           <div className="banner">
@@ -60,7 +62,7 @@ const Reservation = () => {
             <div className="reservation_form_box">
               <h1>MAKE A RESERVATION</h1>
               <p>For Further Questions, Please Call</p>
-              <form onSubmit={handleReservation}> 
+              <form onSubmit={handleReservation}>
                 <div>
                   <input
                     type="text"
@@ -115,7 +117,7 @@ const Reservation = () => {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };
