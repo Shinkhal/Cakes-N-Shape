@@ -17,7 +17,7 @@ const SignupForm = () => {
         e.preventDefault();
         try {
             const { data } = await axios.post(
-                "http://3.111.215.173:4000/api/v1/signup/send",
+                "https://ec2-13-200-59-120.ap-south-1.compute.amazonaws.com:4000/api/v1/signup/send",
                 { first, last, email, password },
                 {
                     
