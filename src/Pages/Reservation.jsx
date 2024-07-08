@@ -3,8 +3,8 @@ import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 
-import Footer from "../Components/Footer";
 
 const Reservation = () => {
   const [firstName, setFirstName] = useState("");
@@ -52,8 +52,18 @@ const Reservation = () => {
   };
 
   return (
-    <>
+    <div className="reserve">
+    <Navbar/>
+    <h1 style={{
+      textAlign: "center",
+        fontSize: '2.5rem', 
+        fontWeight: 'bold', 
+        color: '#333', 
+        textTransform: 'uppercase',
+        marginBottom: '20px'
+      }}>Enjoy More Than a Meal: Reserve Your Evening of Gastronomy</h1>
       <section className="reservation" id="reservation">
+        
         <div className="container">
           <div className="banner">
             <img src="/reservation.png" alt="res" />
@@ -117,8 +127,7 @@ const Reservation = () => {
           </div>
         </div>
       </section>
-      <Footer />
-    </>
+    </div>
   );
 };
 

@@ -15,6 +15,9 @@ const About = () => {
   return (
     <section className='about' id='about'>
       <div className="container">
+      <div className="banner">
+          <img src="/about.png" alt="about" />
+        </div>
         <div className="banner">
           {/* Your existing content */}
           {/* "About Us" section */}
@@ -45,9 +48,7 @@ const About = () => {
             <HiOutlineArrowNarrowRight/>
           </span></Link>
         </div>
-        <div className="banner">
-          <img src="/about.jpg" alt="about" />
-        </div>
+        
       </div>
     </section>
   );

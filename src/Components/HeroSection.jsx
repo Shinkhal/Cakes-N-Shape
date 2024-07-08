@@ -34,8 +34,9 @@ const HeroSection = () => {
     return (
         <section className="heroSection">
             <Navbar/>
-            
+            <h1 className='title'>Welcome to Feista Flavours</h1>
             <div className="slideshow-container">
+                
                 {images.map((src, index) => (
                     <img
                         key={src}
@@ -55,9 +56,7 @@ const HeroSection = () => {
                     ))}
                 </div>
             </div>
-            <div className="additional-content">
-            <h2 className='title'>Welcome to Feista Flavours...</h2>
-            </div>
+            
         </section>
     );
 };

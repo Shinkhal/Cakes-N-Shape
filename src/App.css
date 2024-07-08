@@ -32,7 +32,7 @@ nav {
   align-items: center;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
-  margin-top: -10px;
+  margin-top: -10px; 
   position: relative;
   top: 0; 
   background-color: whitesmoke;
@@ -179,7 +179,6 @@ nav svg {
 .heroSection {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
@@ -199,10 +198,10 @@ nav svg {
   -webkit-box-shadow: 4px 5px 52px 12px rgba(0,0,0,0.69);
 -moz-box-shadow: 4px 5px 52px 12px rgba(0,0,0,0.69);
 box-shadow: 4px 5px 52px 12px rgba(0,0,0,0.69);
-  max-width: 1000px;
+  max-width: 900px;
   max-height: 1000px;
-  margin: 0 auto;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .heroSection .slideshow-img {
@@ -250,14 +249,14 @@ box-shadow: 4px 5px 52px 12px rgba(0,0,0,0.69);
 .about {
  
   display: flex;
-  min-height: 100vh;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid black;
   
   
 }
 .about .container {
-  max-width: 1500px;
+  max-width: 1000px;
   min-width: 1500px;
   display: flex;
 }
@@ -268,7 +267,7 @@ box-shadow: 4px 5px 52px 12px rgba(0,0,0,0.69);
   justify-content: space-evenly;
 }
 .about .container .banner img {
-  width: 80%;
+  width: 100%;
 
 }
 .about .heading{
@@ -371,17 +370,18 @@ box-shadow: 4px 5px 52px 12px rgba(0,0,0,0.69);
 /*********************************************************************************************************************/
 .qualities {
   display: flex;
-  height: fit-content;
+  height: 300px;
   padding: 75px 20px;
   justify-content: center;
   align-items: center;
   -webkit-box-shadow: 1px -1px 31px 2px rgba(0,0,0,0.75);
 -moz-box-shadow: 1px -1px 31px 2px rgba(0,0,0,0.75);
 box-shadow: 1px -1px 31px 2px rgba(0,0,0,0.75);
+height:auto;
 
 }
 .qualities .container {
-  min-width: 1500px;
+  min-width: 1000px;
   max-width: 1500px;
   display: flex;
   flex-wrap: wrap;
@@ -455,6 +455,7 @@ box-shadow: 1px -1px 31px 2px rgba(0,0,0,0.75);
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
+  border: 2px solid white;
 }
 .menu .container {
   max-width: 1500px;
@@ -629,7 +630,7 @@ box-shadow: 1px -1px 31px 2px rgba(0,0,0,0.75);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  
  
 }
 .who_are_we .container {
@@ -860,16 +861,23 @@ footer .end-text p {
 
 /******************* RESERVATION COMPONENT STYLING **************/
 /**********************************************************************************************************************/
-.reservation {
-  display: flex;
-  min-height: 75vh;
-  padding: 30px 20px;
-  justify-content: center;
-  align-items: center;
+.reserve{
   background: url(/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.reservation {
+  display: flex;
+  padding: 30px 20px;
+  justify-content: center;
+  align-items: center;
+  
 }
 .reservation .container {
   max-width: 1500px;
@@ -1053,7 +1061,7 @@ footer .end-text p {
 /**********************************************************************************************************************/
 .notFound {
   display: flex;
-  min-height: 100vh;
+  
   justify-content: center;
   align-items: center;
   background: url(/background.svg);

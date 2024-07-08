@@ -12,9 +12,9 @@ const Home = () => {
   return (
     <>
         <HeroSection/>
-        <About/>
         <Quantities/>
         <Menu/>
+        <About/>
         <WhoAreWe/>
         <Team/>
         <Footer/>

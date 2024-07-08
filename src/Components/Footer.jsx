@@ -20,9 +20,9 @@ const Footer = () => {
                 <div>
                     <h3>Contact</h3>
                     <ul>
-                        <li>Address: <br/>123 Main Street, Towncity, USA</li>
-                        <li>Phone: <br/>+1 234 567 890</li>
-                        <li>Email: <br/>info@yourrestaurant.com</li>
+                        <li>Address: <br/>Ranchi, Jharkhand</li>
+                        <li>Phone: <br/>+91 234 567 890</li>
+                        <li>Email: <br/>shinkhalsinha@gmail.com</li>
                     </ul>
                 </div>
                 

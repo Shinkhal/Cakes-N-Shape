@@ -8,44 +8,18 @@ import Reservation from "./Pages/Reservation";
 import LoginForm from "./Pages/loginForm";
 import SignupForm from "./Pages/SignupForm";
 import CuisineMenu from "./Components/CuisineMenu";
-import AnimatedCursor from "react-animated-cursor"
+import ScrollToTop from 'react-scroll-to-top';
+import { FaArrowUp } from 'react-icons/fa'
 
 const App = () => {
   return(
     <div className="App">
-      <AnimatedCursor
-                innerSize={16}
-                outerSize={16}
-                color='0, 0, 0'
-                zindex={1000}
-                outerAlpha={0.2}
-                innerScale={0.7}
-                outerScale={5}
-                clickables={[
-                    'a',
-                    'input[type="text"]',
-                    'input[type="email"]',
-                    'input[type="number"]',
-                    'input[type="submit"]',
-                    'input[type="image"]',
-                    'label[for]',
-                    'select',
-                    'textarea',
-                    'button',
-                    '.link',
-                    {
-                        target: '.custom',
-                        options: {
-                            innerSize: 12,
-                            outerSize: 12,
-                            color: '0, 0, 0',
-                            outerAlpha: 0.3,
-                            innerScale: 0.7,
-                            outerScale: 5
-                        }
-                    }
-                ]}
-            />
+      <ScrollToTop 
+        smooth
+        color="#f8f9fa" 
+        style={{ backgroundColor: 'red', borderRadius: '50%' }}
+        component={<FaArrowUp />} 
+      />
       <Router>
     <Routes>
       <Route path="/" element={<Home/>} />
