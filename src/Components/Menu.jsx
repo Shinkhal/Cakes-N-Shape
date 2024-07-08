@@ -8,7 +8,7 @@ const Menu = () => {
       <div className="container">
         <div className="heading_section">
           <h1 className='heading'>Popular Dishes</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto facere minus, rem, minima dolor reprehenderit explicabo laborum impedit consectetur quasi nobis dolore ex perspiciatis culpa possimus aliquid quod labore praesentium illum dicta non mollitia et itaque natus. Neque optio atque provident! Perspiciatis libero eos voluptatibus, vero officiis doloremque laboriosam dolorum.</p>
+          <p>Explore our diverse selection of popular dishes from around the world. Whether you crave the rich flavors of Indian spices, the savory delights of Chinese cuisine, or the comforting taste of Italian pasta, our menu offers something for every palate.</p>
         </div>
         <div className="dishes_container">
           <Link to="/menu/indian" className='card'>

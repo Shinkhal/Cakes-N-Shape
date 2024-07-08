@@ -17,6 +17,7 @@ const App = () => {
                 innerSize={16}
                 outerSize={16}
                 color='0, 0, 0'
+                zindex={1000}
                 outerAlpha={0.2}
                 innerScale={0.7}
                 outerScale={5}
