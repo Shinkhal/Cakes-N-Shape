@@ -29,7 +29,7 @@ const Reservation = () => {
 
     try {
       const { data } = await axios.post(
-        "https://shinkhal-sinha.online/api/v1/reservation/send",
+        "https://cusine.feista-flavours.infinityfreeapp.com/api/v1/reservation/send",
         { firstName, lastName, email, phone, date: formattedDate, time },
         {
           headers: {

@@ -16,7 +16,7 @@ const LoginForm = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "https://shinkhal-sinha.online/api/v1/login/send",
+                "https://cusine.feista-flavours.infinityfreeapp.com/api/v1/login/send",
                 { email, password },
                 { withCredentials: true }
             );
