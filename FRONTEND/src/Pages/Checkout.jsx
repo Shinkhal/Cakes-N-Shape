@@ -12,7 +12,7 @@ const CheckoutPage = () => {
   const [isUseCurrentAddress, setIsUseCurrentAddress] = useState(true);
   const navigate = useNavigate();
 
-  const POSITIONSTACK_API_KEY = '6da281eba8b97166b9e862737afbcd22'; // Your PositionStack API Key
+  const POSITIONSTACK_API_KEY = import.meta.env.VITE_LOCATION_API;
 
   // Load cart and user data from localStorage when the component mounts
   useEffect(() => {
