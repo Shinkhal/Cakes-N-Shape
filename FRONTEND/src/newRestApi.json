@@ -1,0 +1,38 @@
+{
+  "categoryDetails": {
+    "cakes": { "description": "Our delicious and freshly baked cakes" },
+    "pastries": { "description": "A selection of our finest pastries" },
+    "breads": { "description": "Freshly baked artisan breads" },
+    "cookies": { "description": "Crisp and delightful cookies for every occasion" }
+  },
+  "bakery": {
+    "cakes": [
+      { "id": 1, "title": "Chocolate Truffle Cake", "price": "₹500", "image": "https://example.com/images/chocolate-truffle-cake.jpg", "description": "Rich and creamy chocolate cake with truffle layers." },
+      { "id": 2, "title": "Vanilla Sponge Cake", "price": "₹400", "image": "https://example.com/images/vanilla-sponge-cake.jpg", "description": "Soft and airy vanilla sponge with light frosting." },
+      { "id": 3, "title": "Red Velvet Cake", "price": "₹600", "image": "https://example.com/images/red-velvet-cake.jpg", "description": "Classic red velvet cake with cream cheese frosting." },
+      { "id": 4, "title": "Black Forest Cake", "price": "₹550", "image": "https://example.com/images/black-forest-cake.jpg", "description": "Layered chocolate cake with cherries and whipped cream." },
+      { "id": 5, "title": "Butterscotch Delight Cake", "price": "₹480", "image": "https://example.com/images/butterscotch-cake.jpg", "description": "Butterscotch cake with crunchy caramel bits." }
+    ],
+    "pastries": [
+      { "id": 6, "title": "Chocolate Pastry", "price": "₹80", "image": "https://example.com/images/chocolate-pastry.jpg", "description": "Indulgent chocolate pastry with rich layers." },
+      { "id": 7, "title": "Blueberry Cheesecake Pastry", "price": "₹100", "image": "https://example.com/images/blueberry-pastry.jpg", "description": "Tangy blueberry pastry with a creamy cheesecake base." },
+      { "id": 8, "title": "Strawberry Pastry", "price": "₹90", "image": "https://example.com/images/strawberry-pastry.jpg", "description": "Delightful strawberry pastry with fresh fruit topping." },
+      { "id": 9, "title": "Mango Mousse Pastry", "price": "₹95", "image": "https://example.com/images/mango-pastry.jpg", "description": "Light mango mousse pastry with tropical flavors." },
+      { "id": 10, "title": "Pineapple Pastry", "price": "₹75", "image": "https://example.com/images/pineapple-pastry.jpg", "description": "Sweet and refreshing pineapple pastry." }
+    ],
+    "breads": [
+      { "id": 11, "title": "Whole Wheat Bread", "price": "₹50", "image": "https://example.com/images/whole-wheat-bread.jpg", "description": "Healthy and wholesome whole wheat bread." },
+      { "id": 12, "title": "Multigrain Bread", "price": "₹60", "image": "https://example.com/images/multigrain-bread.jpg", "description": "Nutritious bread with a mix of grains." },
+      { "id": 13, "title": "Garlic Bread Loaf", "price": "₹70", "image": "https://example.com/images/garlic-bread.jpg", "description": "Flavorful garlic bread loaf with herbs." },
+      { "id": 14, "title": "Sourdough Bread", "price": "₹90", "image": "https://example.com/images/sourdough-bread.jpg", "description": "Traditional sourdough bread with a tangy taste." },
+      { "id": 15, "title": "Focaccia Bread", "price": "₹85", "image": "https://example.com/images/focaccia-bread.jpg", "description": "Italian-style bread with olive oil and herbs." }
+    ],
+    "cookies": [
+      { "id": 16, "title": "Chocolate Chip Cookies", "price": "₹150 per dozen", "image": "https://example.com/images/chocolate-chip-cookies.jpg", "description": "Classic cookies with gooey chocolate chips." },
+      { "id": 17, "title": "Oatmeal Raisin Cookies", "price": "₹140 per dozen", "image": "https://example.com/images/oatmeal-raisin-cookies.jpg", "description": "Hearty oatmeal cookies with plump raisins." },
+      { "id": 18, "title": "Butter Cookies", "price": "₹130 per dozen", "image": "https://example.com/images/butter-cookies.jpg", "description": "Melt-in-your-mouth buttery cookies." },
+      { "id": 19, "title": "Almond Biscotti", "price": "₹180 per dozen", "image": "https://example.com/images/almond-biscotti.jpg", "description": "Crunchy biscotti with roasted almonds." },
+      { "id": 20, "title": "Coconut Macaroons", "price": "₹160 per dozen", "image": "https://example.com/images/coconut-macaroons.jpg", "description": "Sweet and chewy coconut macaroons." }
+    ]
+  }
+}
