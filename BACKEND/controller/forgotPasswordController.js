@@ -35,7 +35,7 @@ export const forgotPassword = async (req, res) => {
       <a href="${resetLink}">Reset your password</a> 
       If you have any issues or didn't request this, please contact our support team. 
       Best regards, 
-      Cakes N Shapes Team</p>
+      Dwija Bake Studio Team</p>
     `;
 
     // Send email (ensure sendEmail function supports HTML)

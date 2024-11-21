@@ -25,12 +25,12 @@ export const sendReservation = async (req, res, next) => {
         // Send confirmation email to the customer
         const emailSubject = "Reservation Confirmation";
         const emailMessage = `Hello ${firstName} ${lastName},
-        Your reservation at Cakes N Shapes has been successfully placed for:
+        Your reservation at Dwija Bake Studio has been successfully placed for:
         Date: ${date}
         Time: ${time}
         Thank you for choosing us. We look forward to serving you!
         Best regards,
-        Cakes N Shapes Team`;
+        Dwija Bake Studio Team`;
 
         // Send the email using your email sending function
         await sendEmail(email, emailSubject, emailMessage);

@@ -30,7 +30,7 @@ const HeroSection = () => {
                     color: '#333',
                     textTransform: 'uppercase',
                     margin: '20px'
-                }}>Welcome to Cakes N Shapes</h1>
+                }}>Welcome to Dwija Bake Studio</h1>
                 <div className="slideshow-container">
                     <img
                         src={placeholderImage}

@@ -14,7 +14,7 @@ const sendEmail = async (toEmail, subject, text) => {
   });
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,  // Use the same email address as from
+    from: "kuldeepgautam2189@gmail.com",  // Use the same email address as from
     to: toEmail,
     subject: subject,
     text: text

@@ -34,7 +34,7 @@ const addReview = async (req, res) => {
       Content: ${content}
       We are constantly working to improve, and your review helps us provide better service to you and other customers.
       Best regards,
-      Cakes N Shapes Team</p>
+      Dwija Bake Studio Team</p>
     `;
 
     // Send the thank-you email

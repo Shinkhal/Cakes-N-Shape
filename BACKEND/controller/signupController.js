@@ -36,17 +36,17 @@ export const sendUser = async (req, res, next) => {
     });
 
     // Send welcome email to the new user
-    const emailSubject = "Welcome to Cakes N Shapes!";
+    const emailSubject = "Welcome to Dwija Bake Studio!";
     const uppercasedFirst = first.toUpperCase();
     const uppercasedLast = last.toUpperCase();
     
     const emailMessage = `Hello ${uppercasedFirst} ${uppercasedLast},\n
     
-    Welcome to Cakes N Shapes! 
+    Welcome to Dwija Bake Studio! 
     We're thrilled to have you join us. Get ready to embark on a culinary journey filled with delicious flavors and delightful dishes.
     Thank you for signing up and choosing to explore our menu. We can't wait to serve you!\n
     Best regards,
-    Cakes N Shapes Team`;
+    Dwija Bake Studio Team`;
     
 
     await sendEmail(email, emailSubject, emailMessage);
@@ -63,7 +63,6 @@ export const sendUser = async (req, res, next) => {
     });
   } catch (error) {
     if (error.name === "ValidationError") {
-      // Extract and format validation errors
       const validationErrors = Object.values(error.errors).map((err) => err.message);
       return next(new ErrorHandler(validationErrors.join(", "), 400));
     }

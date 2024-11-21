@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
 
             <div className="end-text">
-                <p>&copy; 2024 Cakes N Shapes. All Rights Reserved.</p>
+                <p>&copy; 2024 Dwija Bake Studio. All Rights Reserved.</p>
             </div>
         </footer>
     );

@@ -476,6 +476,12 @@ box-shadow: 4px 5px 52px 12px rgba(0,0,0,0.69);
   transition: transform 0.3s ease;
 }
 
+.item-image{
+  height: 200px;
+  width: 100%;
+  margin: 5px;
+}
+
 .menu-item-card:hover {
   transform: scale(1.05);
 }
