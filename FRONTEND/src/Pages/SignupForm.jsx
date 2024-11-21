@@ -17,7 +17,7 @@ const SignupForm = () => {
         e.preventDefault();
         try {
             const { data } = await axios.post(
-                "http://localhost:4800/api/v1/signup/send",
+                "https://bakery-backend-production-e2c9.up.railway.app/api/v1/signup/send",
                 { first, last, email, password },
                 {
                     

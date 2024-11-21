@@ -18,7 +18,7 @@ const LoginForm = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:4800/api/v1/login/send",
+                "https://bakery-backend-production-e2c9.up.railway.app/api/v1/login/send",
                 { email, password },
                 { withCredentials: true }
             );

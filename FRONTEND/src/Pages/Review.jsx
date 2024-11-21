@@ -13,7 +13,7 @@ const ReviewPage = () => {
 
   // Fetch reviews from the backend
   useEffect(() => {
-    axios.get('http://localhost:4800/api/v1/reviews')
+    axios.get('https://bakery-backend-production-e2c9.up.railway.app/api/v1/reviews')
       .then(response => {
         setReviews(response.data);
       })
@@ -39,7 +39,7 @@ const ReviewPage = () => {
         };
         console.log(newReview.email);
 
-        axios.post('http://localhost:4800/api/v1/reviews', newReview)
+        axios.post('https://bakery-backend-production-e2c9.up.railway.app/api/v1/reviews', newReview)
           .then(response => {
             setReviews([...reviews, response.data.review]); // Add the new review to the state
             setName('');

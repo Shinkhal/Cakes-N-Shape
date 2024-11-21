@@ -27,7 +27,7 @@ const ForgotPasswordPage = () => {
     setError('');
     
     try {
-      const response = await fetch('http://localhost:4800/api/v1/auth/forgot', {
+      const response = await fetch('https://bakery-backend-production-e2c9.up.railway.app/api/v1/auth/forgot', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

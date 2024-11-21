@@ -15,7 +15,7 @@ const ResetPasswordPage = () => {
     // Verify token validity when the component mounts
     const verifyToken = async () => {
       try {
-        const response = await axios.post('http://localhost:4800/api/v1/auth/verify-token', { token });
+        const response = await axios.post('https://bakery-backend-production-e2c9.up.railway.app/api/v1/auth/verify-token', { token });
         if (response.status !== 200) {
           setError('Invalid or expired token.');
         }
@@ -49,7 +49,7 @@ const ResetPasswordPage = () => {
     setLoading(true);
     try {
       // Make a POST request to reset the password
-      const response = await axios.post('http://localhost:4800/api/v1/auth/reset-password', { token, newPassword });
+      const response = await axios.post('https://bakery-backend-production-e2c9.up.railway.app/api/v1/auth/reset-password', { token, newPassword });
       setSuccess('Your password has been reset successfully.');
       setError('');
       // Redirect to the login page after success
