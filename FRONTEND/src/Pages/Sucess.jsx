@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+
 const Success = () => {
   const [countdown, setCountdown] = useState(10);
   const navigate = useNavigate();

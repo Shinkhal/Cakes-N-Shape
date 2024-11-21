@@ -9,13 +9,12 @@ import LoginForm from "./Pages/loginForm";
 import SignupForm from "./Pages/SignupForm";
 import Menu from "./Pages/Menu";
 import Cart from "./Pages/Cart";
-import ReviewPage from "./Pages/Review";
 import ForgotPasswordPage from "./Pages/ForgotPassword";
-import ResetPasswordPage from "./Pages/ResetPassword";
 import CheckoutPage from "./Pages/Checkout";
 import ScrollToTop from 'react-scroll-to-top';
 import { FaArrowUp } from 'react-icons/fa';
-
+import ReviewPage from "./Pages/ReviewPage";
+import ResetPassword from "./Pages/ResetPassword";
 const App = () => {
   return (
     <div className="App">
@@ -37,8 +36,8 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/review" element={<ReviewPage />} />
           <Route path="/forgot" element={<ForgotPasswordPage />} />
-          <Route path="/reset-password/:token" element={<ResetPasswordPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/reset-password/:token" element={<ResetPassword />} />
         </Routes>
         <Toaster />
       </Router>
